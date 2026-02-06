@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutsal Yazılım | Geleceği Kodluyoruz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #05050a;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Hero Alanı */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #1a1a3a 0%, #05050a 100%);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Senin Hazırladığımız Logonun Alanı */
+        .logo-container {
+            width: 280px;
+            height: 280px;
+            margin-bottom: 20px;
+            background-image: url('Gemini_Generated_Image_gs48iwgs48iwgs48.png'); /* Melekli Logo */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: drop-shadow(0 0 20px rgba(142, 68, 173, 0.5));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #fff, #8e44ad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #a0a0ff;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .cta-button {
+            margin-top: 40px;
+            padding: 15px 35px;
+            background: linear-gradient(45deg, #8e44ad, #2980b9);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: 0.4s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(142, 68, 173, 0.8);
+        }
+
+        /* Teknolojik Arka Plan Efekti */
+        .bg-lines {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(rgba(142, 68, 173, 0.05) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(142, 68, 173, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="bg-lines"></div>
+        <div class="logo-container"></div>
+        
+        <h1>KUTSAL YAZILIM</h1>
+        <p>Geleceği Kodluyoruz</p>
+        
+        <a href="#" class="cta-button">PROJELERİMİZİ GÖRÜN</a>
+    </section>
+
+</body>
+</html>
