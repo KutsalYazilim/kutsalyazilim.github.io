@@ -1,1 +1,0 @@
-# kutsalyazilim.github.io
